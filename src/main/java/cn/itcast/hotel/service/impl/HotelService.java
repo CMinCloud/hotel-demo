@@ -237,6 +237,7 @@ public class HotelService extends ServiceImpl<HotelMapper, Hotel> implements IHo
         //        进行分页过滤
         Integer page = param.getPage();
         Integer size = param.getSize();
+//        封装query到请求中去
         request.source().query(query)
                 .from((page - 1) * size).size(size);
 

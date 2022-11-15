@@ -22,7 +22,7 @@ public class HotelDemoApplication {
 
     @Bean
     public RestHighLevelClient client(){
-        return  new RestHighLevelClient(RestClient.builder(HttpHost.create("http://47.113.193.238:9200")));
+        return  new RestHighLevelClient(RestClient.builder(HttpHost.create("47.109.59.20:9200")));
 //        在项目运行过程中就不需要关闭client了
     }
 
